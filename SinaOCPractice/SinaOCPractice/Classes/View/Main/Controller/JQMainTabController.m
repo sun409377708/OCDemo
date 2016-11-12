@@ -8,6 +8,7 @@
 
 #import "JQMainTabController.h"
 #import "JQMainNavController.h"
+#import "JQMainTabBar.h"
 
 @interface JQMainTabController ()
 
@@ -18,7 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    // 1. 自定义tabbar
+    JQMainTabBar *tabView = [[JQMainTabBar alloc] init];
+    [self setValue:tabView forKey:@"tabBar"];
+    
+    // 2. 添加控制器
     [self addControllers];
+    
 }
 
 - (void)addControllers {
@@ -32,9 +39,10 @@
     [mutable addObject:[self addChildControllerWith:@"JQDiscoverController" title:@"发现" normalImage:@"tabbar_discover"]];
     [mutable addObject:[self addChildControllerWith:@"JQProfileController" title:@"我" normalImage:@"tabbar_profile"]];
 
-    
     // 3. 赋值
     self.viewControllers = mutable;
+    
+    
 }
 
 - (UIViewController *)addChildControllerWith:(NSString *)clsName title:(NSString *)title normalImage:(NSString *)normalImage {

@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    _window = [[UIWindow alloc] initWithFrame:SCREEN_BOUNDS];
     
     JQMainTabController *tab = [[JQMainTabController alloc] init];
     

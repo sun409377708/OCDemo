@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1HA-Xb-ZHG" customClass="JQSearchView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOd-ZV-JaS">
+                    <rect key="frame" x="344" y="0.0" width="31" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="IZa-nn-h2V"/>
+                    </constraints>
+                    <state key="normal" title="取消"/>
+                    <connections>
+                        <action selector="cancelBtnClick:" destination="1HA-Xb-ZHG" eventType="touchUpInside" id="bps-yM-vwQ"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入搜索项" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VoX-Xy-CKW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <action selector="textChange:" destination="1HA-Xb-ZHG" eventType="editingDidBegin" id="oFr-fr-VHf"/>
+                    </connections>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XOd-ZV-JaS" secondAttribute="bottom" id="45g-mb-tTh"/>
+                <constraint firstItem="XOd-ZV-JaS" firstAttribute="top" secondItem="1HA-Xb-ZHG" secondAttribute="top" id="If2-FE-piW"/>
+                <constraint firstItem="VoX-Xy-CKW" firstAttribute="top" secondItem="1HA-Xb-ZHG" secondAttribute="top" id="ctB-VN-57h"/>
+                <constraint firstAttribute="trailing" secondItem="XOd-ZV-JaS" secondAttribute="trailing" id="fEK-Xt-W8m"/>
+                <constraint firstItem="VoX-Xy-CKW" firstAttribute="leading" secondItem="1HA-Xb-ZHG" secondAttribute="leading" id="oNC-HV-ydb"/>
+                <constraint firstAttribute="trailing" secondItem="VoX-Xy-CKW" secondAttribute="trailing" id="snZ-3b-TYN"/>
+                <constraint firstAttribute="bottom" secondItem="VoX-Xy-CKW" secondAttribute="bottom" id="vgL-M9-yy9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelBtn" destination="XOd-ZV-JaS" id="fOO-8m-Kzj"/>
+                <outlet property="textField" destination="VoX-Xy-CKW" id="Q1q-Qf-E28"/>
+                <outlet property="textRightConstraint" destination="snZ-3b-TYN" id="JlV-gm-oOS"/>
+            </connections>
+            <point key="canvasLocation" x="61" y="232"/>
+        </view>
+    </objects>
+</document>
