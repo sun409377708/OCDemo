@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		10AB08352E19906BEF224BD8 /* libPods-SinaOCPractice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF8474B1D78BF8B4BD46F783 /* libPods-SinaOCPractice.a */; };
+		7700108C1DD6C91F004281C9 /* JQMainTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7700108B1DD6C91F004281C9 /* JQMainTabController.m */; };
+		7700108F1DD6C934004281C9 /* JQHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7700108E1DD6C934004281C9 /* JQHomeController.m */; };
+		770010921DD6C947004281C9 /* JQMessageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770010911DD6C947004281C9 /* JQMessageController.m */; };
+		770010951DD6C95A004281C9 /* JQDiscoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770010941DD6C95A004281C9 /* JQDiscoverController.m */; };
+		770010981DD6C96D004281C9 /* JQProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770010971DD6C96D004281C9 /* JQProfileController.m */; };
+		7700109B1DD6CA61004281C9 /* JQMainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7700109A1DD6CA61004281C9 /* JQMainNavController.m */; };
 		77222D501DD405D700B29165 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77222D4F1DD405D700B29165 /* main.m */; };
 		77222D531DD405D700B29165 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77222D521DD405D700B29165 /* AppDelegate.m */; };
 		77222D561DD405D700B29165 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77222D551DD405D700B29165 /* ViewController.m */; };
@@ -18,12 +24,25 @@
 
 /* Begin PBXFileReference section */
 		6BB1D87C9AB7D663D2FA50AC /* Pods-SinaOCPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaOCPractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SinaOCPractice/Pods-SinaOCPractice.debug.xcconfig"; sourceTree = "<group>"; };
+		770010891DD6C771004281C9 /* SinaOCPractice_PrefixHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SinaOCPractice_PrefixHeader.h; sourceTree = "<group>"; };
+		7700108A1DD6C91F004281C9 /* JQMainTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQMainTabController.h; sourceTree = "<group>"; };
+		7700108B1DD6C91F004281C9 /* JQMainTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQMainTabController.m; sourceTree = "<group>"; };
+		7700108D1DD6C934004281C9 /* JQHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQHomeController.h; sourceTree = "<group>"; };
+		7700108E1DD6C934004281C9 /* JQHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQHomeController.m; sourceTree = "<group>"; };
+		770010901DD6C947004281C9 /* JQMessageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQMessageController.h; sourceTree = "<group>"; };
+		770010911DD6C947004281C9 /* JQMessageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQMessageController.m; sourceTree = "<group>"; };
+		770010931DD6C95A004281C9 /* JQDiscoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQDiscoverController.h; sourceTree = "<group>"; };
+		770010941DD6C95A004281C9 /* JQDiscoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQDiscoverController.m; sourceTree = "<group>"; };
+		770010961DD6C96D004281C9 /* JQProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQProfileController.h; sourceTree = "<group>"; };
+		770010971DD6C96D004281C9 /* JQProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQProfileController.m; sourceTree = "<group>"; };
+		770010991DD6CA61004281C9 /* JQMainNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQMainNavController.h; sourceTree = "<group>"; };
+		7700109A1DD6CA61004281C9 /* JQMainNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQMainNavController.m; sourceTree = "<group>"; };
 		77222D4B1DD405D700B29165 /* SinaOCPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaOCPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77222D4F1DD405D700B29165 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77222D511DD405D700B29165 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77222D521DD405D700B29165 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		77222D541DD405D700B29165 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		77222D551DD405D700B29165 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		77222D541DD405D700B29165 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../ViewController.h; sourceTree = "<group>"; };
+		77222D551DD405D700B29165 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../ViewController.m; sourceTree = "<group>"; };
 		77222D581DD405D700B29165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77222D5A1DD405D700B29165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77222D5D1DD405D700B29165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -74,14 +93,9 @@
 		77222D4D1DD405D700B29165 /* SinaOCPractice */ = {
 			isa = PBXGroup;
 			children = (
+				77222D981DD410B700B29165 /* Classes */,
 				77222D511DD405D700B29165 /* AppDelegate.h */,
 				77222D521DD405D700B29165 /* AppDelegate.m */,
-				77222D541DD405D700B29165 /* ViewController.h */,
-				77222D551DD405D700B29165 /* ViewController.m */,
-				77222D571DD405D700B29165 /* Main.storyboard */,
-				77222D5A1DD405D700B29165 /* Assets.xcassets */,
-				77222D5C1DD405D700B29165 /* LaunchScreen.storyboard */,
-				77222D5F1DD405D700B29165 /* Info.plist */,
 				77222D4E1DD405D700B29165 /* Supporting Files */,
 			);
 			path = SinaOCPractice;
@@ -90,9 +104,195 @@
 		77222D4E1DD405D700B29165 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				77222D5A1DD405D700B29165 /* Assets.xcassets */,
+				77222D5C1DD405D700B29165 /* LaunchScreen.storyboard */,
+				77222D5F1DD405D700B29165 /* Info.plist */,
 				77222D4F1DD405D700B29165 /* main.m */,
+				770010891DD6C771004281C9 /* SinaOCPractice_PrefixHeader.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77222D981DD410B700B29165 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				77222D9C1DD410B700B29165 /* View */,
+				77222D991DD410B700B29165 /* Model */,
+				77222DAC1DD410B700B29165 /* ViewModel */,
+				77222D9B1DD410B700B29165 /* Tools */,
+				77222D9A1DD410B700B29165 /* Other */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		77222D991DD410B700B29165 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		77222D9A1DD410B700B29165 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				77222D541DD405D700B29165 /* ViewController.h */,
+				77222D551DD405D700B29165 /* ViewController.m */,
+				77222D571DD405D700B29165 /* Main.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		77222D9B1DD410B700B29165 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		77222D9C1DD410B700B29165 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77222DA31DD410B700B29165 /* Main */,
+				77222DA01DD410B700B29165 /* Home */,
+				77222DA61DD410B700B29165 /* Message */,
+				77222D9D1DD410B700B29165 /* Discover */,
+				77222DA91DD410B700B29165 /* Profile */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77222D9D1DD410B700B29165 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				77222D9E1DD410B700B29165 /* Controller */,
+				77222D9F1DD410B700B29165 /* View */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		77222D9E1DD410B700B29165 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				770010931DD6C95A004281C9 /* JQDiscoverController.h */,
+				770010941DD6C95A004281C9 /* JQDiscoverController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		77222D9F1DD410B700B29165 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77222DA01DD410B700B29165 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				77222DA11DD410B700B29165 /* Controller */,
+				77222DA21DD410B700B29165 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		77222DA11DD410B700B29165 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7700108D1DD6C934004281C9 /* JQHomeController.h */,
+				7700108E1DD6C934004281C9 /* JQHomeController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		77222DA21DD410B700B29165 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77222DA31DD410B700B29165 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				77222DA41DD410B700B29165 /* Controller */,
+				77222DA51DD410B700B29165 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		77222DA41DD410B700B29165 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7700108A1DD6C91F004281C9 /* JQMainTabController.h */,
+				7700108B1DD6C91F004281C9 /* JQMainTabController.m */,
+				770010991DD6CA61004281C9 /* JQMainNavController.h */,
+				7700109A1DD6CA61004281C9 /* JQMainNavController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		77222DA51DD410B700B29165 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77222DA61DD410B700B29165 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				77222DA71DD410B700B29165 /* Controller */,
+				77222DA81DD410B700B29165 /* View */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		77222DA71DD410B700B29165 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				770010901DD6C947004281C9 /* JQMessageController.h */,
+				770010911DD6C947004281C9 /* JQMessageController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		77222DA81DD410B700B29165 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77222DA91DD410B700B29165 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				77222DAA1DD410B700B29165 /* Controller */,
+				77222DAB1DD410B700B29165 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		77222DAA1DD410B700B29165 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				770010961DD6C96D004281C9 /* JQProfileController.h */,
+				770010971DD6C96D004281C9 /* JQProfileController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		77222DAB1DD410B700B29165 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		77222DAC1DD410B700B29165 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		ABE8CA594178D99C5E049E1D /* Frameworks */ = {
@@ -132,6 +332,7 @@
 		77222D431DD405D600B29165 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JQ;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = maoge;
 				TargetAttributes = {
@@ -215,7 +416,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -225,9 +426,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				770010981DD6C96D004281C9 /* JQProfileController.m in Sources */,
+				7700109B1DD6CA61004281C9 /* JQMainNavController.m in Sources */,
 				77222D561DD405D700B29165 /* ViewController.m in Sources */,
+				7700108F1DD6C934004281C9 /* JQHomeController.m in Sources */,
+				770010921DD6C947004281C9 /* JQMessageController.m in Sources */,
 				77222D531DD405D700B29165 /* AppDelegate.m in Sources */,
+				770010951DD6C95A004281C9 /* JQDiscoverController.m in Sources */,
 				77222D501DD405D700B29165 /* main.m in Sources */,
+				7700108C1DD6C91F004281C9 /* JQMainTabController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +447,7 @@
 				77222D581DD405D700B29165 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		77222D5C1DD405D700B29165 /* LaunchScreen.storyboard */ = {
@@ -346,7 +554,10 @@
 			baseConfigurationReference = 6BB1D87C9AB7D663D2FA50AC /* Pods-SinaOCPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = SinaOCPractice/SinaOCPractice_PrefixHeader.h;
 				INFOPLIST_FILE = SinaOCPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iOS.SinaOCPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -358,7 +569,10 @@
 			baseConfigurationReference = DB5C9DF6BD9FC1F3E44593B0 /* Pods-SinaOCPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREFIX_HEADER = SinaOCPractice/SinaOCPractice_PrefixHeader.h;
 				INFOPLIST_FILE = SinaOCPractice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = iOS.SinaOCPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -384,6 +598,7 @@
 				77222D641DD405D700B29165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

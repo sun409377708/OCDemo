@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JQMainTabController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,15 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    _window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    JQMainTabController *tab = [[JQMainTabController alloc] init];
+    
+    _window.rootViewController = tab;
+    
+    [_window makeKeyAndVisible];
+    
     return YES;
 }
 

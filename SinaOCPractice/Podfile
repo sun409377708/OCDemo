@@ -7,4 +7,6 @@ target 'SinaOCPractice' do
 
   # Pods for SinaOCPractice
 pod ‘AFNetworking’
+pod ‘Masonry’
+pod ’SDWebImage’
 end
