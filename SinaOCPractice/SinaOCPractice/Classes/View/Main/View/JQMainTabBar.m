@@ -26,9 +26,7 @@
 }
 
 - (void)setupUI {
-    
-    self.backgroundColor = [UIColor redColor];
-    
+        
     [self addSubview:self.composeBtn];
 
 }

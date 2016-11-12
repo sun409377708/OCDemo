@@ -30,6 +30,7 @@
 		770010D21DD7075C004281C9 /* NSObject+CZRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 770010C31DD7075C004281C9 /* NSObject+CZRuntime.m */; };
 		770010D31DD7075C004281C9 /* NSString+pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 770010C51DD7075C004281C9 /* NSString+pinyin.m */; };
 		770010D41DD7075C004281C9 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 770010C71DD7075C004281C9 /* Utils.m */; };
+		770010D81DD70C79004281C9 /* UIBarButtonItem+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 770010D71DD70C79004281C9 /* UIBarButtonItem+Addition.m */; };
 		77222D501DD405D700B29165 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77222D4F1DD405D700B29165 /* main.m */; };
 		77222D531DD405D700B29165 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77222D521DD405D700B29165 /* AppDelegate.m */; };
 		77222D561DD405D700B29165 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77222D551DD405D700B29165 /* ViewController.m */; };
@@ -86,6 +87,8 @@
 		770010C61DD7075C004281C9 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		770010C71DD7075C004281C9 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		770010D51DD707B9004281C9 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
+		770010D61DD70C79004281C9 /* UIBarButtonItem+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Addition.h"; sourceTree = "<group>"; };
+		770010D71DD70C79004281C9 /* UIBarButtonItem+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Addition.m"; sourceTree = "<group>"; };
 		77222D4B1DD405D700B29165 /* SinaOCPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaOCPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77222D4F1DD405D700B29165 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77222D511DD405D700B29165 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -238,6 +241,8 @@
 			children = (
 				770010D51DD707B9004281C9 /* CommonDefine.h */,
 				770010AB1DD7075C004281C9 /* Categories */,
+				770010D61DD70C79004281C9 /* UIBarButtonItem+Addition.h */,
+				770010D71DD70C79004281C9 /* UIBarButtonItem+Addition.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -538,6 +543,7 @@
 				770010921DD6C947004281C9 /* JQMessageController.m in Sources */,
 				770010CF1DD7075C004281C9 /* UIImage+Extension.m in Sources */,
 				770010D01DD7075C004281C9 /* UILabel+Extension.m in Sources */,
+				770010D81DD70C79004281C9 /* UIBarButtonItem+Addition.m in Sources */,
 				770010A41DD6F1A1004281C9 /* JQSearchView.m in Sources */,
 				770010CA1DD7075C004281C9 /* NSObject+JQRuntime.m in Sources */,
 				770010CE1DD7075C004281C9 /* UIColor+Addition.m in Sources */,

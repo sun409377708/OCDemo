@@ -7,6 +7,7 @@
 //
 
 #import "JQHomeController.h"
+#import "ViewController.h"
 
 @interface JQHomeController ()
 
@@ -18,6 +19,18 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomTitle:@"" imageName:@"navigationbar_pop" target:self action:@selector(back)];
+    
+}
+
+- (void)back {
+    NSLog(@"backClick");
+    
+    ViewController *vc = [[ViewController alloc] init];
+    
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 - (void)didReceiveMemoryWarning {

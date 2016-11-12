@@ -15,3 +15,4 @@
 #import "UIImage+Extension.h"
 #import "NSObject+JQRuntime.h"
 #import "UIView+WP.h"
+#import "UIBarButtonItem+Addition.h"
