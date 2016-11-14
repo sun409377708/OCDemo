@@ -10,4 +10,6 @@
 
 @interface JQMainTabBar : UITabBar
 
+@property (nonatomic, copy) void (^btnBlock)();
+
 @end

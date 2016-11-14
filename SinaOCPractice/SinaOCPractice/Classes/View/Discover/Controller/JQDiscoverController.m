@@ -19,6 +19,9 @@
     [super viewDidLoad];
     
     self.navigationItem.titleView = [JQSearchView loadSearchView];
+    
+    [self.visitorView loadVisitorViewWithImage:@"visitordiscover_image_message" andContent:@"登录后，最新、最热微博尽在掌握，不再会与实事潮流擦肩而过"];
+
 }
 
 - (void)didReceiveMemoryWarning {

@@ -21,4 +21,9 @@
 //保存图片至沙盒
 - (void)saveToBoxWithName:(NSString *)imageName;
 
+//裁剪图片
++ (instancetype)resizebleImage:(NSString *)name;
+
 @end
+
+

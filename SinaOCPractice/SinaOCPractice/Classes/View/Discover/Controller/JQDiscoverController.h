@@ -6,8 +6,8 @@
 //  Copyright © 2016年 maoge. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "JQBaseController.h"
 
-@interface JQDiscoverController : UITableViewController
+@interface JQDiscoverController : JQBaseController
 
 @end

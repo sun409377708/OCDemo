@@ -26,6 +26,11 @@
     // 2. 添加控制器
     [self addControllers];
     
+    tabView.btnBlock = ^{
+        
+        NSLog(@"按钮被点击");
+    };
+    
 }
 
 - (void)addControllers {

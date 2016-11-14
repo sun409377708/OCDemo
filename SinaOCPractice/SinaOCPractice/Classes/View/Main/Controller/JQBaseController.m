@@ -1,32 +1,66 @@
 //
-//  JQMessageController.m
+//  JQBaseController.m
 //  SinaOCPractice
 //
-//  Created by maoge on 16/11/12.
+//  Created by maoge on 16/11/14.
 //  Copyright © 2016年 maoge. All rights reserved.
 //
 
-#import "JQMessageController.h"
+#import "JQBaseController.h"
 
-@interface JQMessageController ()
+@interface JQBaseController ()<VisitorLoginViewDelegate>
+
 
 @end
 
-@implementation JQMessageController
+@implementation JQBaseController
+
+
+- (void)loadView {
+    
+    if (_isLogin) {
+        
+        [super loadView];
+    }else {
+        self.view = self.visitorView;
+    }
+    
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.visitorView loadVisitorViewWithImage:@"visitordiscover_image_message" andContent:@"登录后，别人评论你的微博，发给你的消息，都会在这里收到通知"];
+    
+}
 
+- (UIView *)visitorView {
+    
+    if (_visitorView == nil) {
+        
+        _visitorView = [[JQVisitorView alloc] init];
+        
+        _visitorView.delegate = self;
+    }
+    
+    return _visitorView;
 }
 
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)visitorWillLogin {
+    NSLog(@"登录");
+    
+//    OAuthViewController *oAuth = [[OAuthViewController alloc] init];
+//    
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:oAuth];
+//    
+//    [self presentViewController:nav animated:YES completion:nil];
+    
 }
+
+- (void)visitorWillRegistor {
+    NSLog(@"注册");
+}
+
 
 #pragma mark - Table view data source
 

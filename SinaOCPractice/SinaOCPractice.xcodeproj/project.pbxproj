@@ -37,6 +37,9 @@
 		77222D591DD405D700B29165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77222D571DD405D700B29165 /* Main.storyboard */; };
 		77222D5B1DD405D700B29165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77222D5A1DD405D700B29165 /* Assets.xcassets */; };
 		77222D5E1DD405D700B29165 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77222D5C1DD405D700B29165 /* LaunchScreen.storyboard */; };
+		775A723F1DD99717007B8626 /* JQBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775A723E1DD99717007B8626 /* JQBaseController.m */; };
+		775A72421DD99898007B8626 /* JQVisitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 775A72411DD99898007B8626 /* JQVisitorView.m */; };
+		775A72451DD99D8C007B8626 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 775A72441DD99D8C007B8626 /* UIButton+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +102,12 @@
 		77222D5A1DD405D700B29165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77222D5D1DD405D700B29165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77222D5F1DD405D700B29165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		775A723D1DD99717007B8626 /* JQBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQBaseController.h; sourceTree = "<group>"; };
+		775A723E1DD99717007B8626 /* JQBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQBaseController.m; sourceTree = "<group>"; };
+		775A72401DD99898007B8626 /* JQVisitorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQVisitorView.h; sourceTree = "<group>"; };
+		775A72411DD99898007B8626 /* JQVisitorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQVisitorView.m; sourceTree = "<group>"; };
+		775A72431DD99D8C007B8626 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		775A72441DD99D8C007B8626 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		CF8474B1D78BF8B4BD46F783 /* libPods-SinaOCPractice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SinaOCPractice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5C9DF6BD9FC1F3E44593B0 /* Pods-SinaOCPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaOCPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinaOCPractice/Pods-SinaOCPractice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +155,8 @@
 				770010BC1DD7075C004281C9 /* UIImage+Extension.m */,
 				770010BD1DD7075C004281C9 /* UILabel+Extension.h */,
 				770010BE1DD7075C004281C9 /* UILabel+Extension.m */,
+				775A72431DD99D8C007B8626 /* UIButton+Extension.h */,
+				775A72441DD99D8C007B8626 /* UIButton+Extension.m */,
 				770010BF1DD7075C004281C9 /* UIView+WP.h */,
 				770010C01DD7075C004281C9 /* UIView+WP.m */,
 				770010C11DD7075C004281C9 /* 汉字转拼音 */,
@@ -328,6 +339,8 @@
 				7700108B1DD6C91F004281C9 /* JQMainTabController.m */,
 				770010991DD6CA61004281C9 /* JQMainNavController.h */,
 				7700109A1DD6CA61004281C9 /* JQMainNavController.m */,
+				775A723D1DD99717007B8626 /* JQBaseController.h */,
+				775A723E1DD99717007B8626 /* JQBaseController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -337,6 +350,8 @@
 			children = (
 				7700109C1DD6CD79004281C9 /* JQMainTabBar.h */,
 				7700109D1DD6CD79004281C9 /* JQMainTabBar.m */,
+				775A72401DD99898007B8626 /* JQVisitorView.h */,
+				775A72411DD99898007B8626 /* JQVisitorView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -539,6 +554,8 @@
 				770010D11DD7075C004281C9 /* UIView+WP.m in Sources */,
 				77222D561DD405D700B29165 /* ViewController.m in Sources */,
 				7700108F1DD6C934004281C9 /* JQHomeController.m in Sources */,
+				775A72451DD99D8C007B8626 /* UIButton+Extension.m in Sources */,
+				775A723F1DD99717007B8626 /* JQBaseController.m in Sources */,
 				770010D21DD7075C004281C9 /* NSObject+CZRuntime.m in Sources */,
 				770010921DD6C947004281C9 /* JQMessageController.m in Sources */,
 				770010CF1DD7075C004281C9 /* UIImage+Extension.m in Sources */,
@@ -553,6 +570,7 @@
 				770010951DD6C95A004281C9 /* JQDiscoverController.m in Sources */,
 				7700109E1DD6CD79004281C9 /* JQMainTabBar.m in Sources */,
 				770010C81DD7075C004281C9 /* NSArray+Log.m in Sources */,
+				775A72421DD99898007B8626 /* JQVisitorView.m in Sources */,
 				77222D501DD405D700B29165 /* main.m in Sources */,
 				7700108C1DD6C91F004281C9 /* JQMainTabController.m in Sources */,
 			);

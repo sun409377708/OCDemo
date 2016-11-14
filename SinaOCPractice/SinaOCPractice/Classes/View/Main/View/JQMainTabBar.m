@@ -28,8 +28,20 @@
 - (void)setupUI {
         
     [self addSubview:self.composeBtn];
-
+    
+    [self.composeBtn addTarget:self action:@selector(composeBtnDidClick:) forControlEvents:UIControlEventTouchUpInside];
 }
+
+#pragma mark -
+#pragma mark 按钮点击
+
+- (void)composeBtnDidClick:(UIButton *)sender {
+    
+    if (self.btnBlock) {
+        self.btnBlock();
+    }
+}
+
 
 - (void)layoutSubviews {
     [super layoutSubviews];

@@ -18,9 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor whiteColor];
+//    self.view.backgroundColor = [UIColor whiteColor];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomTitle:@"" imageName:@"navigationbar_pop" target:self action:@selector(back)];
+    
+    [self.visitorView loadVisitorViewWithImage:nil andContent:@"苦涩的痛吹通脸胖的感觉, 永远难忘记, 年少的我稀罕一个人在海关"];
+
     
 }
 
