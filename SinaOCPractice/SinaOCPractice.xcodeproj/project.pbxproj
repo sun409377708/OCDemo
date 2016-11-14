@@ -40,6 +40,7 @@
 		775A723F1DD99717007B8626 /* JQBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775A723E1DD99717007B8626 /* JQBaseController.m */; };
 		775A72421DD99898007B8626 /* JQVisitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 775A72411DD99898007B8626 /* JQVisitorView.m */; };
 		775A72451DD99D8C007B8626 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 775A72441DD99D8C007B8626 /* UIButton+Extension.m */; };
+		775A72511DD9F850007B8626 /* JQOAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775A72501DD9F850007B8626 /* JQOAuthController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +109,8 @@
 		775A72411DD99898007B8626 /* JQVisitorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQVisitorView.m; sourceTree = "<group>"; };
 		775A72431DD99D8C007B8626 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
 		775A72441DD99D8C007B8626 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		775A724F1DD9F850007B8626 /* JQOAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQOAuthController.h; sourceTree = "<group>"; };
+		775A72501DD9F850007B8626 /* JQOAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQOAuthController.m; sourceTree = "<group>"; };
 		CF8474B1D78BF8B4BD46F783 /* libPods-SinaOCPractice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SinaOCPractice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5C9DF6BD9FC1F3E44593B0 /* Pods-SinaOCPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaOCPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinaOCPractice/Pods-SinaOCPractice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -261,6 +264,7 @@
 		77222D9C1DD410B700B29165 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				775A724E1DD9F837007B8626 /* OAuth */,
 				77222DA31DD410B700B29165 /* Main */,
 				77222DA01DD410B700B29165 /* Home */,
 				77222DA61DD410B700B29165 /* Message */,
@@ -411,6 +415,15 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		775A724E1DD9F837007B8626 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				775A724F1DD9F850007B8626 /* JQOAuthController.h */,
+				775A72501DD9F850007B8626 /* JQOAuthController.m */,
+			);
+			name = OAuth;
 			sourceTree = "<group>";
 		};
 		ABE8CA594178D99C5E049E1D /* Frameworks */ = {
@@ -564,6 +577,7 @@
 				770010A41DD6F1A1004281C9 /* JQSearchView.m in Sources */,
 				770010CA1DD7075C004281C9 /* NSObject+JQRuntime.m in Sources */,
 				770010CE1DD7075C004281C9 /* UIColor+Addition.m in Sources */,
+				775A72511DD9F850007B8626 /* JQOAuthController.m in Sources */,
 				77222D531DD405D700B29165 /* AppDelegate.m in Sources */,
 				770010CB1DD7075C004281C9 /* NSString+Base64.m in Sources */,
 				770010CD1DD7075C004281C9 /* NSString+Path.m in Sources */,

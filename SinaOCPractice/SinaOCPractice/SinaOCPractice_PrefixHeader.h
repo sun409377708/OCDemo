@@ -20,4 +20,9 @@
 #define NSLog(...)
 #endif
 
+
+#define client_id @"3555784090"
+#define client_secret @"95602528357bb5f250b4686fd45dfb91"
+#define redirect_uri @"http://www.itcast.cn"
+
 #endif

@@ -7,6 +7,7 @@
 //
 
 #import "JQBaseController.h"
+#import "JQOAuthController.h"
 
 @interface JQBaseController ()<VisitorLoginViewDelegate>
 
@@ -49,11 +50,11 @@
 - (void)visitorWillLogin {
     NSLog(@"登录");
     
-//    OAuthViewController *oAuth = [[OAuthViewController alloc] init];
-//    
-//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:oAuth];
-//    
-//    [self presentViewController:nav animated:YES completion:nil];
+    JQOAuthController *oAuth = [[JQOAuthController alloc] init];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:oAuth];
+    
+    [self presentViewController:nav animated:YES completion:nil];
     
 }
 
