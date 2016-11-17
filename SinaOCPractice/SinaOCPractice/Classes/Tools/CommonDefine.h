@@ -7,16 +7,8 @@
 //
 
 
-#define kSelectedeCityNotiCation @"city"
-#define kClickDetailCellNotiCation  @"ClickDetailCell"
-
 //通知
-#define kComplicationDataNocation @"complicationDataNocation"
-#define kDiseaseDataNocation @"diseaseDataNocation"
-
-
-#define kComplicationDataNotication @"ComplicationData"
-#define kDiseaseDataNotication @"DiseaseData"
+extern NSString *const kChangeRootViewControllerNotification;
 
 
 // LeftVC 偏移距离
@@ -91,8 +83,6 @@
 
 #define kUsersInfoPath [@"usersInfo.plist" jq_appendDocumentDir]
 
-#define kLoginUserInfoPath [@"loginUserInfo.plist" jq_appendDocumentDir]
 
-#define kUserLoginAccount @"kUserLoginAccount"
 
 

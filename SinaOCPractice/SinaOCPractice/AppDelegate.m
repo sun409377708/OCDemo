@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "JQMainTabController.h"
+#import "JQWelcomeViewController.h"
+#import "JQUserAccountViewModel.h"
 
 @interface AppDelegate ()
 
@@ -18,17 +20,38 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [self getChangeController];
+    
     _window = [[UIWindow alloc] initWithFrame:SCREEN_BOUNDS];
-    
-    JQMainTabController *tab = [[JQMainTabController alloc] init];
-    
-    _window.rootViewController = tab;
+
+    _window.rootViewController = [self defaultViewController];
     
     [_window makeKeyAndVisible];
     
     return YES;
 }
 
+- (UIViewController *)defaultViewController {
+    
+    return  [JQUserAccountViewModel shared].isUserLogin ? [[JQWelcomeViewController alloc] init] : [[JQMainTabController alloc] init];
+}
+
+- (void)getChangeController {
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(changeVC:) name:kChangeRootViewControllerNotification object:nil];
+}
+
+- (void)changeVC:(NSNotification *)nofy {
+    
+    JQWelcomeViewController *welcomeVC = [[JQWelcomeViewController alloc] init];
+    
+    if ([nofy.object isEqualToString:@"oauth"]) {
+        _window.rootViewController = welcomeVC;
+    }else {
+        _window.rootViewController = [[JQMainTabController alloc] init];
+    }
+    
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

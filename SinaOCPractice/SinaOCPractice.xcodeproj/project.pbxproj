@@ -31,6 +31,8 @@
 		770010D31DD7075C004281C9 /* NSString+pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 770010C51DD7075C004281C9 /* NSString+pinyin.m */; };
 		770010D41DD7075C004281C9 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 770010C71DD7075C004281C9 /* Utils.m */; };
 		770010D81DD70C79004281C9 /* UIBarButtonItem+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 770010D71DD70C79004281C9 /* UIBarButtonItem+Addition.m */; };
+		7703E2361DDD6BEA0040F795 /* JQUserAccountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7703E2351DDD6BEA0040F795 /* JQUserAccountViewModel.m */; };
+		7703E2391DDD7F470040F795 /* JQWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7703E2381DDD7F470040F795 /* JQWelcomeViewController.m */; };
 		77222D501DD405D700B29165 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77222D4F1DD405D700B29165 /* main.m */; };
 		77222D531DD405D700B29165 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77222D521DD405D700B29165 /* AppDelegate.m */; };
 		77222D561DD405D700B29165 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77222D551DD405D700B29165 /* ViewController.m */; };
@@ -41,6 +43,8 @@
 		775A72421DD99898007B8626 /* JQVisitorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 775A72411DD99898007B8626 /* JQVisitorView.m */; };
 		775A72451DD99D8C007B8626 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 775A72441DD99D8C007B8626 /* UIButton+Extension.m */; };
 		775A72511DD9F850007B8626 /* JQOAuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775A72501DD9F850007B8626 /* JQOAuthController.m */; };
+		77DE40DB1DDB09840077D94E /* NetworkTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DE40DA1DDB09840077D94E /* NetworkTools.m */; };
+		77DE40DE1DDB5E4B0077D94E /* JQUserAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 77DE40DD1DDB5E4B0077D94E /* JQUserAccount.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +97,10 @@
 		770010D51DD707B9004281C9 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
 		770010D61DD70C79004281C9 /* UIBarButtonItem+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Addition.h"; sourceTree = "<group>"; };
 		770010D71DD70C79004281C9 /* UIBarButtonItem+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Addition.m"; sourceTree = "<group>"; };
+		7703E2341DDD6BEA0040F795 /* JQUserAccountViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQUserAccountViewModel.h; sourceTree = "<group>"; };
+		7703E2351DDD6BEA0040F795 /* JQUserAccountViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQUserAccountViewModel.m; sourceTree = "<group>"; };
+		7703E2371DDD7F470040F795 /* JQWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQWelcomeViewController.h; sourceTree = "<group>"; };
+		7703E2381DDD7F470040F795 /* JQWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQWelcomeViewController.m; sourceTree = "<group>"; };
 		77222D4B1DD405D700B29165 /* SinaOCPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaOCPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77222D4F1DD405D700B29165 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77222D511DD405D700B29165 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -111,6 +119,10 @@
 		775A72441DD99D8C007B8626 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		775A724F1DD9F850007B8626 /* JQOAuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQOAuthController.h; sourceTree = "<group>"; };
 		775A72501DD9F850007B8626 /* JQOAuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQOAuthController.m; sourceTree = "<group>"; };
+		77DE40D91DDB09840077D94E /* NetworkTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTools.h; sourceTree = "<group>"; };
+		77DE40DA1DDB09840077D94E /* NetworkTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTools.m; sourceTree = "<group>"; };
+		77DE40DC1DDB5E4B0077D94E /* JQUserAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQUserAccount.h; sourceTree = "<group>"; };
+		77DE40DD1DDB5E4B0077D94E /* JQUserAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQUserAccount.m; sourceTree = "<group>"; };
 		CF8474B1D78BF8B4BD46F783 /* libPods-SinaOCPractice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SinaOCPractice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5C9DF6BD9FC1F3E44593B0 /* Pods-SinaOCPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaOCPractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinaOCPractice/Pods-SinaOCPractice.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,6 +248,8 @@
 		77222D991DD410B700B29165 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				77DE40DC1DDB5E4B0077D94E /* JQUserAccount.h */,
+				77DE40DD1DDB5E4B0077D94E /* JQUserAccount.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -253,6 +267,7 @@
 		77222D9B1DD410B700B29165 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				77DE40D81DDB09570077D94E /* Network */,
 				770010D51DD707B9004281C9 /* CommonDefine.h */,
 				770010AB1DD7075C004281C9 /* Categories */,
 				770010D61DD70C79004281C9 /* UIBarButtonItem+Addition.h */,
@@ -413,6 +428,8 @@
 		77222DAC1DD410B700B29165 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7703E2341DDD6BEA0040F795 /* JQUserAccountViewModel.h */,
+				7703E2351DDD6BEA0040F795 /* JQUserAccountViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -422,8 +439,19 @@
 			children = (
 				775A724F1DD9F850007B8626 /* JQOAuthController.h */,
 				775A72501DD9F850007B8626 /* JQOAuthController.m */,
+				7703E2371DDD7F470040F795 /* JQWelcomeViewController.h */,
+				7703E2381DDD7F470040F795 /* JQWelcomeViewController.m */,
 			);
 			name = OAuth;
+			sourceTree = "<group>";
+		};
+		77DE40D81DDB09570077D94E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				77DE40D91DDB09840077D94E /* NetworkTools.h */,
+				77DE40DA1DDB09840077D94E /* NetworkTools.m */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 		ABE8CA594178D99C5E049E1D /* Frameworks */ = {
@@ -561,8 +589,11 @@
 				770010981DD6C96D004281C9 /* JQProfileController.m in Sources */,
 				770010CC1DD7075C004281C9 /* NSString+Hash.m in Sources */,
 				7700109B1DD6CA61004281C9 /* JQMainNavController.m in Sources */,
+				77DE40DE1DDB5E4B0077D94E /* JQUserAccount.m in Sources */,
 				770010D41DD7075C004281C9 /* Utils.m in Sources */,
+				7703E2391DDD7F470040F795 /* JQWelcomeViewController.m in Sources */,
 				770010D31DD7075C004281C9 /* NSString+pinyin.m in Sources */,
+				7703E2361DDD6BEA0040F795 /* JQUserAccountViewModel.m in Sources */,
 				770010C91DD7075C004281C9 /* NSAttributedString+Extension.m in Sources */,
 				770010D11DD7075C004281C9 /* UIView+WP.m in Sources */,
 				77222D561DD405D700B29165 /* ViewController.m in Sources */,
@@ -570,6 +601,7 @@
 				775A72451DD99D8C007B8626 /* UIButton+Extension.m in Sources */,
 				775A723F1DD99717007B8626 /* JQBaseController.m in Sources */,
 				770010D21DD7075C004281C9 /* NSObject+CZRuntime.m in Sources */,
+				77DE40DB1DDB09840077D94E /* NetworkTools.m in Sources */,
 				770010921DD6C947004281C9 /* JQMessageController.m in Sources */,
 				770010CF1DD7075C004281C9 /* UIImage+Extension.m in Sources */,
 				770010D01DD7075C004281C9 /* UILabel+Extension.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "JQBaseController.h"
 #import "JQOAuthController.h"
+#import "JQUserAccountViewModel.h"
 
 @interface JQBaseController ()<VisitorLoginViewDelegate>
 
@@ -19,7 +20,8 @@
 
 - (void)loadView {
     
-    if (_isLogin) {
+   
+    if ( [JQUserAccountViewModel shared].isUserLogin) {
         
         [super loadView];
     }else {

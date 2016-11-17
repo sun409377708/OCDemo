@@ -8,6 +8,10 @@
 
 #import "JQOAuthController.h"
 #import <SVProgressHUD.h>
+#import "NetworkTools.h"
+#import "JQUserAccountViewModel.h"
+
+NSString *const kChangeRootViewControllerNotification = @"kChangeRootViewControllerNotification";
 
 @interface JQOAuthController ()<UIWebViewDelegate>
 
@@ -73,29 +77,8 @@
     
     //获取绝对路径
     NSString *urlString = request.URL.absoluteString;
-    
+    NSLog(@"~~~~~~~~~~~~~~~~~~~");
     //截取需要的code
-//    NSRange range = [urlString rangeOfString:@"code="];
-    
-
-//    if (range.length != 0) {
-//        //截取code=后面的字符串
-//        NSInteger fromIndex = range.location + range.length;
-//        NSString *code = [urlString substringFromIndex:fromIndex];
-//        
-//        NSLog(@"%@", code);
-//        
-//        //        [self loadAccessTokenWithCode:code];
-////        [self loadAccessTokenWithCode:code finished:^NSArray *(NSError *error) {
-////            if (error != nil) {
-////                [SVProgressHUD showErrorWithStatus:@"网络太次"];
-////            }
-////            return nil;
-////        }];
-//        
-//        //禁止加载回调地址
-//        return NO;
-//    }
     NSString *flag = @"code=";
     
     if ([urlString containsString:flag]) {
@@ -104,13 +87,81 @@
         
         NSString *code = [query substringFromIndex:flag.length];
         
+        [[JQUserAccountViewModel shared] loadAccessToken:code finished:^(BOOL isSuccess) {
+            if (!isSuccess) {
+                
+                [SVProgressHUD showErrorWithStatus:@"网络错误"];
+                return;
+            }
+            
+            //跳转控制器
+            [[NSNotificationCenter defaultCenter] postNotificationName:kChangeRootViewControllerNotification object:@"oauth"];
+            
+        }];
+        
+        
         return NO;
     }
-    
-    
-    
     return YES;
 }
+
+//- (void)loadAccessToken:(NSString *)code finished:(void(^)(BOOL isSuccess))finished {
+//    
+//    NSString *urlString = @"https://api.weibo.com/oauth2/access_token";
+//    
+//    NSDictionary *parameter = @{@"client_id": client_id,
+//                                @"client_secret":client_secret,
+//                                @"grant_type" : @"authorization_code",
+//                                @"code":code,
+//                                @"redirect_uri":redirect_uri};
+//    
+//    [[NetworkTools sharedTools] request:POST urlString:urlString parameters:parameter finished:^(id responseObject, NSError *error) {
+//        
+//        if (error != nil) {
+//            finished(YES);
+//            return;
+//        }
+//        
+//        NSDictionary *dict = responseObject;
+//        
+//        [self loadUserInfo:dict finished:finished];
+//        
+//    }];
+//    
+//}
+//
+//- (void)loadUserInfo:(NSDictionary *)dict finished:(void(^)(BOOL isSuccess))finished {
+//    
+//    NSString *urlString = @"https://api.weibo.com/2/users/show.json";
+//    NSDictionary *parameter = @{@"access_token" : dict[@"access_token"],
+//                                @"uid" : dict[@"uid"]};
+//    
+//    
+//    [[NetworkTools sharedTools] request:GET urlString:urlString parameters:parameter finished:^(id responseObject, NSError *error) {
+//        
+//        if (error != nil) {
+//            finished(YES);
+//            return;
+//        }
+//        
+//        NSMutableDictionary *dictM = responseObject;
+//        
+//        //遍历字典
+//        [dict enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull value, BOOL * _Nonnull stop) {
+//            
+//            dictM[key] = value;
+//        }];
+//        
+//        //字典转模型
+//        
+//        
+//        
+//        //保存数据
+//        finished(YES);
+//        
+//        
+//    }];
+//}
 
 
 @end
